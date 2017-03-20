@@ -17,6 +17,7 @@
 		810308961846579B00C378F0 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810308901846579B00C378F0 /* SWUtilityButtonView.m */; };
 		810308A2184D682700C378F0 /* um.png in Resources */ = {isa = PBXBuildFile; fileRef = 810308A1184D682700C378F0 /* um.png */; };
 		810308A5184D688D00C378F0 /* UMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 810308A4184D688D00C378F0 /* UMTableViewCell.m */; };
+		9590F5651E803DC800BFE50C /* SWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9590F5641E803DC800BFE50C /* SWCollectionViewCell.m */; };
 		AF28B0F117F77DA300A77ABB /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF28B0F017F77DA300A77ABB /* clock@2x.png */; };
 		AF28B0F317F77DA600A77ABB /* cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF28B0F217F77DA600A77ABB /* cross@2x.png */; };
 		AF28B0F517F77DB000A77ABB /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF28B0F417F77DB000A77ABB /* check@2x.png */; };
@@ -66,6 +67,8 @@
 		810308A3184D688D00C378F0 /* UMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMTableViewCell.h; sourceTree = "<group>"; };
 		810308A4184D688D00C378F0 /* UMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMTableViewCell.m; sourceTree = "<group>"; };
 		92B6FCB0D9F5F5976482C755 /* libPods-SWTableViewCellTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SWTableViewCellTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9590F5631E803DC800BFE50C /* SWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCollectionViewCell.h; sourceTree = "<group>"; };
+		9590F5641E803DC800BFE50C /* SWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCollectionViewCell.m; sourceTree = "<group>"; };
 		AF28B0F017F77DA300A77ABB /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
 		AF28B0F217F77DA600A77ABB /* cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross@2x.png"; sourceTree = "<group>"; };
 		AF28B0F417F77DB000A77ABB /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 				8103088E1846579B00C378F0 /* SWUtilityButtonTapGestureRecognizer.m */,
 				8103088F1846579B00C378F0 /* SWUtilityButtonView.h */,
 				810308901846579B00C378F0 /* SWUtilityButtonView.m */,
+				9590F5631E803DC800BFE50C /* SWCollectionViewCell.h */,
+				9590F5641E803DC800BFE50C /* SWCollectionViewCell.m */,
 			);
 			path = PodFiles;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				AF34B77517DEE2B400BD9082 /* main.m in Sources */,
 				AF34B77917DEE2B400BD9082 /* AppDelegate.m in Sources */,
 				810308921846579B00C378F0 /* SWCellScrollView.m in Sources */,
+				9590F5651E803DC800BFE50C /* SWCollectionViewCell.m in Sources */,
 				810308911846579B00C378F0 /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				810308961846579B00C378F0 /* SWUtilityButtonView.m in Sources */,
 				810308A5184D688D00C378F0 /* UMTableViewCell.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  SWTableViewCell.h
+//  SWCollectionViewCell.h
 //  SWTableViewCell
 //
 //  Created by Chris Wendel on 9/10/13.
@@ -12,33 +12,9 @@
 #import "SWLongPressGestureRecognizer.h"
 #import "SWUtilityButtonTapGestureRecognizer.h"
 #import "NSMutableArray+SWUtilityButtons.h"
+#import "SWTableViewCell.h"
 
-@class SWTableViewCell;
-
-typedef NS_ENUM(NSInteger, SWCellState)
-{
-    kCellStateCenter,
-    kCellStateLeft,
-    kCellStateRight,
-};
-
-@protocol SWCellProtocol <NSObject>
-
-@end
-
-@protocol SWTableViewCellDelegate <NSObject>
-
-@optional
-- (void)swipeableTableViewCell:(id<SWCellProtocol>)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index;
-- (void)swipeableTableViewCell:(id<SWCellProtocol>)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index;
-- (void)swipeableTableViewCell:(id<SWCellProtocol>)cell scrollingToState:(SWCellState)state;
-- (BOOL)swipeableTableViewCellShouldHideUtilityButtonsOnSwipe:(id<SWCellProtocol>)cell;
-- (BOOL)swipeableTableViewCell:(id<SWCellProtocol>)cell canSwipeToState:(SWCellState)state;
-- (void)swipeableTableViewCellDidEndScrolling:(id<SWCellProtocol>)cell;
-
-@end
-
-@interface SWTableViewCell : UITableViewCell <SWCellProtocol>
+@interface SWCollectionViewCell : UICollectionViewCell <SWCellProtocol>
 
 @property (nonatomic, copy) NSArray *leftUtilityButtons;
 @property (nonatomic, copy) NSArray *rightUtilityButtons;

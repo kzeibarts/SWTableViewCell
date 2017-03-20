@@ -8,6 +8,7 @@
 
 #import "SWUtilityButtonView.h"
 #import "SWUtilityButtonTapGestureRecognizer.h"
+#import "SWTableViewCell.h"
 
 @interface SWUtilityButtonView()
 
@@ -20,14 +21,14 @@
 
 #pragma mark - SWUtilityButonView initializers
 
-- (id)initWithUtilityButtons:(NSArray *)utilityButtons parentCell:(SWTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector
+- (id)initWithUtilityButtons:(NSArray *)utilityButtons parentCell:(id <SWCellProtocol>)parentCell utilityButtonSelector:(SEL)utilityButtonSelector
 {
     self = [self initWithFrame:CGRectZero utilityButtons:utilityButtons parentCell:parentCell utilityButtonSelector:utilityButtonSelector];
     
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame utilityButtons:(NSArray *)utilityButtons parentCell:(SWTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector
+- (id)initWithFrame:(CGRect)frame utilityButtons:(NSArray *)utilityButtons parentCell:(id <SWCellProtocol>)parentCell utilityButtonSelector:(SEL)utilityButtonSelector
 {
     self = [super initWithFrame:frame];
     

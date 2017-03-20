@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-@class SWTableViewCell;
+@protocol SWCellProtocol;
 
 #define kUtilityButtonWidthDefault 90
 
 @interface SWUtilityButtonView : UIView
 
-- (id)initWithUtilityButtons:(NSArray *)utilityButtons parentCell:(SWTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector;
-- (id)initWithFrame:(CGRect)frame utilityButtons:(NSArray *)utilityButtons parentCell:(SWTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector;
+- (id)initWithUtilityButtons:(NSArray *)utilityButtons parentCell:(id <SWCellProtocol>)parentCell utilityButtonSelector:(SEL)utilityButtonSelector;
+- (id)initWithFrame:(CGRect)frame utilityButtons:(NSArray *)utilityButtons parentCell:(id <SWCellProtocol>)parentCell utilityButtonSelector:(SEL)utilityButtonSelector;
 
-@property (nonatomic, weak, readonly) SWTableViewCell *parentCell;
+@property (nonatomic, weak, readonly) id <SWCellProtocol> parentCell;
 @property (nonatomic, copy) NSArray *utilityButtons;
 @property (nonatomic, assign) SEL utilityButtonSelector;
 
