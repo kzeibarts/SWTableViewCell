@@ -8,6 +8,7 @@
 
 #import "SWCollectionViewCell.h"
 #import "SWUtilityButtonView.h"
+#import "NSMutableArray+SWUtilityButtons.h"
 
 #define kSectionIndexWidth 15
 #define kAccessoryTrailingSpace 15

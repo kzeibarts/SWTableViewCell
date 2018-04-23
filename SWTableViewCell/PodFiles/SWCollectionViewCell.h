@@ -11,7 +11,6 @@
 #import "SWCellScrollView.h"
 #import "SWLongPressGestureRecognizer.h"
 #import "SWUtilityButtonTapGestureRecognizer.h"
-#import "NSMutableArray+SWUtilityButtons.h"
 #import "SWTableViewCell.h"
 
 @interface SWCollectionViewCell : UICollectionViewCell <SWCellProtocol>

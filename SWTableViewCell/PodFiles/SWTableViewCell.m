@@ -8,6 +8,7 @@
 
 #import "SWTableViewCell.h"
 #import "SWUtilityButtonView.h"
+#import "NSMutableArray+SWUtilityButtons.h"
 
 static NSString * const kTableViewCellContentView = @"UITableViewCellContentView";
 
